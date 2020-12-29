@@ -1,0 +1,134 @@
+html {
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  body, h1, h2, h3, h4, h5, h6, p, ol, ul {
+    margin: 0;
+    padding: 0;
+    font-weight: normal;
+  }
+  
+  ol, ul {
+    list-style: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  ul{
+      font-family: 'Lato' sans-serif;
+  }
+
+  .container {
+      width: 1264px;
+      margin: 0 auto; /* centering container */
+  }
+
+  .navbar{
+      display: flex;
+      align-items: center;
+      padding-top: 56px;
+      margin-bottom: 176px;
+  }
+  .header{
+      background: url('../img/Image.jpg') no-repeat center top / cover; 
+  }
+
+  .menu{
+      display: flex;
+  }
+  .menu li{
+    margin-right: 82px;
+  }
+  .logo {
+      margin-right: 488px;
+  }
+  header a{
+      color:#FFFF;
+  }
+  .discover{
+      font-family: 'Lato' sans-serif;
+  }
+
+  .discover h2{
+      font-size: 50px;
+      width: 619px;
+      margin-bottom: 22px;
+  }
+
+  .description {
+      width: 546px;
+      font: 16px;
+      margin-bottom: 59px;
+  }
+
+  .menu li a {
+      text-decoration: none;
+      font-size: 18px;
+  }
+
+  header p, h2 {
+    color: #FFFF;
+  }
+
+  .search {
+      display: flex;
+      align-items: center;
+      margin-bottom: 153px;
+  }
+  
+
+
+  .activity{
+      margin-right:61px;
+  }
+
+  .activity-search{
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      font-size: 18px;
+  }
+
+  .place-search {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      font-size: 18px;
+  }
+
+  .first-oval {
+      margin-right:23px;
+  }
+
+  .second-oval {
+      margin-right: 23px;
+  }
+
+  .place {
+      margin-right: 60px;
+  }
+
+  .button {
+      text-decoration: none;
+      text-transform: uppercase;
+      background-color: #1B7DFF;
+      padding: 15px 39px 14px 39px;
+      font-size:24px;
+  }
+
+  .benefits h3 {
+      font-size: 35px;
+      font-family: 'Lato' sans-serif;
+      color: #102746;
+      background-color: #FFFF;
+      padding-top: 93px;
+      padding-left: 99px;
+  }
