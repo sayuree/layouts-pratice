@@ -219,3 +219,64 @@ table {
 
   /* intro styles end */
 
+  /* benefits styles starts*/
+  .benefits__wrapper{
+      max-width: 1262px;
+      background-color: white;
+      margin: 0 auto;
+      box-shadow: 0px 2px 20px rgba(21, 24, 36, 0.15993);
+      position: relative;
+  }
+  .benefits__title{
+      width: 100%;
+      font-weight: 500;
+      font-size: 35px;
+      line-height: 42px;
+      padding: 93px 100px 88px 100px;
+      position: absolute ;
+      top:0;
+      left:0;
+      transform: translateY(-100%);
+      background-color: white;
+  }  
+  .benefits__cards{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-gap: 55px;
+      padding-left: 100px;
+      padding-right: 100px;  
+  }
+  .benefits__card-icon{
+      padding-bottom: 37px;  
+      max-width: 66px;    
+  }
+  .benefits__card{
+      grid-column: span 1;
+  }
+  .benefits__card-thumb{
+      display: block;
+  }
+  .benefits__card-subtitle{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 26px;
+  }
+  .benefits__card-description{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 39px;
+  }
+  .benefits__card-more{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #006DFE;
+    text-decoration: none;
+  }
+  /* benefits styles ends*/
