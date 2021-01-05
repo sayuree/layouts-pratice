@@ -92,6 +92,10 @@ table {
       box-sizing: inherit;
   }
 
+  img{
+      max-width: 100%;
+  }
+
   body {
       font-family: 'Lato';
       font-size: 16px;
@@ -99,6 +103,11 @@ table {
       line-height: 1.2;
       font-style: normal;
       color: #102746;
+  }
+
+  .content__wrapper{
+      max-width: 1264px;
+      margin: 0 auto;
   }
 
   /* header section styles start*/
@@ -144,6 +153,26 @@ table {
 
   .item:last-child {
       margin-right:0px;
+  }
+
+  .section__title{
+    font-weight: 500;
+    font-size: 35px;
+    line-height: 42px;
+    color: #102746;
+    position: relative;
+    padding-bottom: 10px;
+  }
+
+  .section__title::after{
+      display: block;
+      position: absolute;
+      content: '';
+      background-color: #006DFE;
+      width: 253px;
+      height: 3px;
+      bottom: 0;
+      left:0;
   }
 
   /* header styles end */
@@ -220,6 +249,9 @@ table {
   /* intro styles end */
 
   /* benefits styles starts*/
+  .benefits{
+      margin-bottom: 88px;
+  }
   .benefits__wrapper{
       max-width: 1262px;
       background-color: white;
@@ -252,6 +284,7 @@ table {
   }
   .benefits__card{
       grid-column: span 1;
+      margin-bottom: 155px;
   }
   .benefits__card-thumb{
       display: block;
@@ -271,12 +304,63 @@ table {
     color: #000000;
     margin-bottom: 39px;
   }
+
   .benefits__card-more{
+    display: inline-block;
+    padding-right: 59px;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 24px;
     color: #006DFE;
     text-decoration: none;
+    transition: all 0.2s;
+    background: url('/Odigo/img/benefits-icon.svg') no-repeat 95% center;
+  }
+
+  .benefits__card-more:hover, .benefits__card-more:focus{
+    background: url('/Odigo/img/benefits-icon.svg') no-repeat right center;
   }
   /* benefits styles ends*/
+
+  /* places styles begin */
+    .places__title{
+        margin-right:15px; /* during scaling VIEW ALL will not stick to the title*/ 
+    }
+    .places__caption{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 36px;
+    }
+
+    .places__view{
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #006DFE;
+        text-decoration: none;
+        padding-right: 59px;
+        background: url('/Odigo/img/benefits-icon.svg') no-repeat 95% center;
+        transition: all 0.2s;
+    }
+    .places__view:hover, .places__view:focus{
+        background: url('/Odigo/img/benefits-icon.svg') no-repeat right center;
+    }
+    .places__photocards{
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        column-gap:10px;
+        row-gap: 10px;
+        grid-auto-columns: 415px;
+    }
+
+    .places__card_size_lg{
+        grid-column: span 3;
+    }
+
+    .places__card_size_small{
+        grid-column: span 2;
+    }
+  /* places styles end */
